@@ -7,13 +7,29 @@
                 <li>Link</li>
                 <li>Link</li>
                 <li>Link</li>
-                <li>Link</li>
+                <li>
+                  <select v-model="selectedLocale" @change="changeLocale">
+    <option value="de">Deutsch</option>
+    <option value="en">English</option>
+    <option value="sv">Svenska</option>
+  </select>
+                </li>
             </ul>
         </div>
     </div>
 </template>
 
-<script setup lang="js"></script>
+<script setup lang="js">
+import { ref } from 'vue';
+import { useLanguageStore } from '@/stores/language';
+
+const languageStore = useLanguageStore();
+const selectedLocale = ref(languageStore.locale); // Initialwert aus dem Store
+
+const changeLocale = () => {
+  languageStore.setLocale(selectedLocale.value);
+};
+</script>
 
 <style lang="css" scoped>
 ul {
