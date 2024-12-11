@@ -22,6 +22,9 @@
         default.openFiles = [ "src/App.vue" ];
       };
       # To run something each time the workspace is (re)started, use the `onStart` hook
+      onStart = {
+        git-pull = "git pull";
+      }
     };
     # Enable previews and customize configuration
     previews = {
