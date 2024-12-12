@@ -29,6 +29,10 @@ const selectedLocale = computed({
   set: (value) => languageStore.setLocale(value)
 });
 
+function changeLocale() {
+  window.location.reload();
+}
+
 </script>
 
 <style lang="css" scoped>
