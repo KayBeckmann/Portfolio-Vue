@@ -3,16 +3,16 @@
         <div class="left">Logo</div>
         <div>
             <ul>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
+                <li>About Me</li>
+                <li>Skills</li>
+                <li>Projekte</li>
+                <li>Kontakt</li>
                 <li>
                   <select v-model="selectedLocale" @change="changeLocale">
-    <option value="de">Deutsch</option>
-    <option value="en">English</option>
-    <option value="sv">Svenska</option>
-  </select>
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                    <option value="sv">Svenska</option>
+                    </select>
                 </li>
             </ul>
         </div>
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="js">
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
 import { useLanguageStore } from '@/stores/language';
 
 const languageStore = useLanguageStore();
