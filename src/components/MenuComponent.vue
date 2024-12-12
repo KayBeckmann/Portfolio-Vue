@@ -20,15 +20,15 @@
 </template>
 
 <script setup lang="js">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useLanguageStore } from '@/stores/language';
 
 const languageStore = useLanguageStore();
-const selectedLocale = ref(languageStore.locale); // Initialwert aus dem Store
+const selectedLocale = computed({
+  get: () => languageStore.locale,
+  set: (value) => languageStore.setLocale(value)
+});
 
-const changeLocale = () => {
-  languageStore.setLocale(selectedLocale.value);
-};
 </script>
 
 <style lang="css" scoped>
