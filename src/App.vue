@@ -1,7 +1,9 @@
 <template>
-<MenuComponent></MenuComponent>
-<RouterView></RouterView>
-<FooterComponent></FooterComponent>
+    <div class="content">
+        <MenuComponent></MenuComponent>
+        <RouterView></RouterView>
+        <FooterComponent></FooterComponent>
+    </div>
 </template>
 
 <script setup>
@@ -11,4 +13,9 @@ import FooterComponent from './components/FooterComponent.vue';
 </script>
 
 <style scoped>
+.content{
+    display:flex;
+    flex-direction: column;
+    width: 97dvw;
+}
 </style>
