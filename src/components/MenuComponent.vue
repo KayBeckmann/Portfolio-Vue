@@ -50,7 +50,8 @@ li {
     top:0;
     width: 100dvw;
     height: 75px;
-    background-color: var(--primary-color);
+    background-color: rgba(20,29,47, 0.5);
+    backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
     justify-content: space-between;
