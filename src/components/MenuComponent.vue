@@ -1,6 +1,6 @@
 <template>
     <div class="menu">
-        <div class="left">Logo</div>
+        <div class="left">Kay</div>
         <div>
             <ul>
                 <li>About Me</li>
@@ -46,15 +46,15 @@ li {
 }
 
 .menu{
-    position: sticky;
-    top:0;
-    width: 100dvw;
-    height: 75px;
-    background-color: rgba(20,29,47, 0.5);
-    backdrop-filter: blur(6px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: sticky;
+  top:0;
+  height: var(--menu-height);
+  max-width: 100dvw;
+  background-color: rgba(20,29,47, 0.5);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .left{
