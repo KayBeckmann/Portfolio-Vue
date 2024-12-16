@@ -4,6 +4,9 @@
       "subtitle": "FRONTEND ENTWICKLER"
     },
     "aboutMe": {
-      "title": "Über mich"
+      "title": "Über mich",
+      "description":"1",
+      "skill1":"2",
+      "skill2":"3"
       }
     }
