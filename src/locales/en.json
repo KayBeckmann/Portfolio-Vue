@@ -1,12 +1,16 @@
 {
-    "landingPage": {
-      "title": "Kay Beckmann",
-      "subtitle": "FRONTEND DEVELOPER"
-    },
-    "aboutMe": {
-      "title": "About me",
-      "description":"Hello, I am a front-end developer from Menzendorf, Germany. I have been working in the field of electrical engineering for 20 years and have been self-employed as a master in this profession. For over 30 years now, I have been immersed in the subject of PCs. This quickly turned into a passion, initially focused on hardware. When I discovered the Linux operating system for myself and recognized the possibilities of individual customization, my enthusiasm for software grew. This led to initial attempts in software development using various programming languages. The opportunity to develop web applications device-independently is seen by me as a chance to professionally leverage my long-standing passion.",
-      "skill1":"I made severel projects at my training for frontend developer. You can try it at the project section.",
-      "skill2":"With the know-how I got at this professional and project-oriented programming school I look forward to using my skills and experience as your new junior developer and contributing to the success of your company."
-      }
+  "landingPage": {
+    "title": "Kay Beckmann",
+    "subtitle": "FRONTEND DEVELOPER"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "description":"Hello, I am a front-end developer from Menzendorf, Germany. I have been working in the field of electrical engineering for 20 years and have been self-employed as a master in this profession. For over 30 years now, I have been immersed in the subject of PCs. This quickly turned into a passion, initially focused on hardware. When I discovered the Linux operating system for myself and recognized the possibilities of individual customization, my enthusiasm for software grew. This led to initial attempts in software development using various programming languages. The opportunity to develop web applications device-independently is seen by me as a chance to professionally leverage my long-standing passion.",
+    "skill1":"I made severel projects at my training for frontend developer. You can try it at the project section.",
+    "skill2":"With the know-how I got at this professional and project-oriented programming school I look forward to using my skills and experience as your new junior developer and contributing to the success of your company."
+  },
+  "contact": {
+    "title": "Contact",
+    "mail": "Write me a mail."
   }
+}

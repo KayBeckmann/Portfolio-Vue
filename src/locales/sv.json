@@ -1,12 +1,16 @@
 {
-    "landingPage": {
-      "title": "Kay Beckmann",
-      "subtitle": "FRONT END UTVELKARE"
-    },
-    "aboutMe": {
-      "title": "Om mig",
-      "description":"Hej, jag är en frontendutvecklare från Menzendorf i Tyskland. Jag har arbetat inom elteknikområdet i 20 år och varit självständig som mästare i detta yrke. I över 30 år har jag fördjupat mig i ämnet datorer. Detta utvecklades snabbt till en passion, inledningsvis med fokus på hårdvara. När jag upptäckte Linux-operativsystemet och insåg möjligheterna till individuell anpassning, växte mitt intresse för mjukvara. Detta ledde till mina första försök inom mjukvaruutveckling med olika programmeringsspråk. Möjligheten att utveckla webbapplikationer oberoende av enheter ser jag som en chans att professionellt dra nytta av min långvariga passion.",
-      "skill1":"Jag gjorde flera projekt under min utbildning till frontendutvecklare. Du kan prova dem i projektavsnittet.",
-      "skill2":"Med det know-how jag fått på den här professionella och projektorienterade programmeringsskolan ser jag fram emot att använda mina färdigheter och min erfarenhet som er nya juniorutvecklare och bidra till ert företags framgång."
-      }
+  "landingPage": {
+    "title": "Kay Beckmann",
+    "subtitle": "FRONT END UTVELKARE"
+  },
+  "aboutMe": {
+    "title": "Om mig",
+    "description":"Hej, jag är en frontendutvecklare från Menzendorf i Tyskland. Jag har arbetat inom elteknikområdet i 20 år och varit självständig som mästare i detta yrke. I över 30 år har jag fördjupat mig i ämnet datorer. Detta utvecklades snabbt till en passion, inledningsvis med fokus på hårdvara. När jag upptäckte Linux-operativsystemet och insåg möjligheterna till individuell anpassning, växte mitt intresse för mjukvara. Detta ledde till mina första försök inom mjukvaruutveckling med olika programmeringsspråk. Möjligheten att utveckla webbapplikationer oberoende av enheter ser jag som en chans att professionellt dra nytta av min långvariga passion.",
+    "skill1":"Jag gjorde flera projekt under min utbildning till frontendutvecklare. Du kan prova dem i projektavsnittet.",
+    "skill2":"Med det know-how jag fått på den här professionella och projektorienterade programmeringsskolan ser jag fram emot att använda mina färdigheter och min erfarenhet som er nya juniorutvecklare och bidra till ert företags framgång."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "mail": "Skriv ett mejl till mig."
   }
+}

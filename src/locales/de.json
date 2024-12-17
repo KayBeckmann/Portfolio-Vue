@@ -1,12 +1,16 @@
 {
-    "landingPage": {
-      "title": "Kay Beckmann",
-      "subtitle": "FRONTEND ENTWICKLER"
-    },
-    "aboutMe": {
-      "title": "Über mich",
-      "description":"Hallo, ich bin ein Frontend-Entwickler aus Menzendorf, Deutschland. Ich arbeite seit 20 Jahren im Bereich der Elektrotechnik und bin in diesem Beruf als Meister selbstständig. Seit über 30 Jahren befasse ich mich intensiv mit dem Thema PCs. Aus dieser Beschäftigung entstand schnell eine Leidenschaft, die sich zunächst auf Hardware konzentrierte. Als ich das Linux-Betriebssystem für mich entdeckte und die Möglichkeiten der individuellen Anpassung erkannte, wuchs meine Begeisterung für Software. Dies führte zu ersten Versuchen in der Softwareentwicklung mit verschiedenen Programmiersprachen. Die Möglichkeit, plattformunabhängig Webanwendungen zu entwickeln, sehe ich als Chance, meine langjährige Leidenschaft nun auch beruflich einzusetzen.",
-      "skill1":"Ich habe während meiner Ausbildung zum Frontend-Entwickler mehrere Projekte erstellt. Du kannst sie im Projektbereich ausprobieren.",
-      "skill2":"Mit dem Know-how, das ich an dieser professionellen und projektorientierten Programmierschule erworben habe, freue ich mich darauf, meine Fähigkeiten und Erfahrungen als Ihr neuer Junior-Entwickler einzusetzen und zum Erfolg Ihres Unternehmens beizutragen."
-      }
-    }
+  "landingPage": {
+    "title": "Kay Beckmann",
+    "subtitle": "FRONTEND ENTWICKLER"
+  },
+  "aboutMe": {
+    "title": "Über mich",
+    "description":"Hallo, ich bin ein Frontend-Entwickler aus Menzendorf, Deutschland. Ich arbeite seit 20 Jahren im Bereich der Elektrotechnik und bin in diesem Beruf als Meister selbstständig. Seit über 30 Jahren befasse ich mich intensiv mit dem Thema PCs. Aus dieser Beschäftigung entstand schnell eine Leidenschaft, die sich zunächst auf Hardware konzentrierte. Als ich das Linux-Betriebssystem für mich entdeckte und die Möglichkeiten der individuellen Anpassung erkannte, wuchs meine Begeisterung für Software. Dies führte zu ersten Versuchen in der Softwareentwicklung mit verschiedenen Programmiersprachen. Die Möglichkeit, plattformunabhängig Webanwendungen zu entwickeln, sehe ich als Chance, meine langjährige Leidenschaft nun auch beruflich einzusetzen.",
+    "skill1":"Ich habe während meiner Ausbildung zum Frontend-Entwickler mehrere Projekte erstellt. Du kannst sie im Projektbereich ausprobieren.",
+    "skill2":"Mit dem Know-how, das ich an dieser professionellen und projektorientierten Programmierschule erworben habe, freue ich mich darauf, meine Fähigkeiten und Erfahrungen als Ihr neuer Junior-Entwickler einzusetzen und zum Erfolg Ihres Unternehmens beizutragen."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "mail": "Schreib mir eine E-Mail."
+  }
+}
