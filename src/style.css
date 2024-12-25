@@ -9,11 +9,26 @@
     --menu-height: 75px;
 }
 
-html, body{
-    padding: 0;
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
     margin: 0;
     background-color: var(--background-color);
-    color:var(--text-color);
+    font-family: "PT Sans", "Open Sans", sans-serif;
+    font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem);
+    color: var(--text-color);
+    /* overflow-x: hidden !important; */
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .pointer{
