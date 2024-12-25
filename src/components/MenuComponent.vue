@@ -1,22 +1,26 @@
 <template>
-    <div class="menu">
-        <div class="left">Kay</div>
-        <div>
-            <ul>
-                <li>About Me</li>
-                <li>Skills</li>
-                <li>Projekte</li>
-                <li>Kontakt</li>
-                <li>
-                  <select v-model="selectedLocale" @change="changeLocale">
-                    <option value="de">Deutsch</option>
-                    <option value="en">English</option>
-                    <option value="sv">Svenska</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
+  <div class="menu">
+    <div class="left">
+      <a href="#">
+        <h1>Ka<span class="coloriezed">y</span></h1>
+      </a>
     </div>
+    <div>
+      <ul>
+        <li>About Me</li>
+        <li>Skills</li>
+        <li>Projekte</li>
+        <li>Kontakt</li>
+        <li>
+          <select v-model="selectedLocale" @change="changeLocale">
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+            <option value="sv">Svenska</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script setup lang="js">
@@ -32,7 +36,6 @@ const selectedLocale = computed({
 function changeLocale() {
   window.location.reload();
 }
-
 </script>
 
 <style lang="css" scoped>
@@ -45,23 +48,23 @@ li {
   margin-right: var(--margin);
 }
 
-.menu{
+.menu {
   position: sticky;
-  top:0;
+  top: 0;
   height: var(--menu-height);
   max-width: 100dvw;
-  background-color: rgba(20,29,47, 0.5);
+  background-color: rgba(20, 29, 47, 0.5);
   backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.left{
-    margin-left: var(--margin);
+.left {
+  margin-left: var(--margin);
 }
 
-.right{
-    margin-right: var(--margin);
+.right {
+  margin-right: var(--margin);
 }
 </style>
