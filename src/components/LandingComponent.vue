@@ -13,7 +13,8 @@ const { currentMessages } = useLanguageStore();
 
 <style scoped>
 .content{
-  height: calc(100dvw - var(--menu-height));
+  height: 100dvh;
+  /* height: calc(100dvh - var(--menu-height)); */
   display: flex;
   align-items: center;
   justify-content: center;
