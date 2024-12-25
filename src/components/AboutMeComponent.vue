@@ -43,6 +43,12 @@ const { currentMessages } = useLanguageStore();
   gap: var(--margin);
 }
 
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .line {
   display: flex;
   gap: var(--margin);
@@ -65,5 +71,12 @@ const { currentMessages } = useLanguageStore();
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 </style>
