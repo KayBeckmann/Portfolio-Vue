@@ -2,6 +2,7 @@
     --primary-color: #007bff;
     --secondary-color: #6c757d;
     --background-color: #141D2F;
+    --highlightg-color: #00bee8;
     --text-color:#E8E3E3;
 
     --margin: 15px;
@@ -13,4 +14,12 @@ html, body{
     margin: 0;
     background-color: var(--background-color);
     color:var(--text-color);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.coloriezed {
+    color: var(--primary-color);
 }
