@@ -23,7 +23,7 @@ body {
     font-family: "PT Sans", "Open Sans", sans-serif;
     font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem);
     color: var(--text-color);
-    /* overflow-x: hidden !important; */
+    overflow-x: hidden !important;
 }
 
 a{
