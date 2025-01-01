@@ -1,4 +1,10 @@
 {
+  "menu":{
+    "about":"Om mig",
+    "skills":"Kompetenser",
+    "projects":"Projekt",
+    "contact":"Kontakt"
+  },
   "landingPage": {
     "title": "Kay Beckmann",
     "subtitle": "FRONT END UTVELKARE"
