@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flag-icons": "^7.2.3",
     "install": "^0.13.0",
     "npm": "^10.9.2",
     "pinia": "^2.3.0",
