@@ -1,9 +1,9 @@
 <template>
     <LandingComponent></LandingComponent>
-    <AboutMeComponent></AboutMeComponent>
-    <SkillsComponent></SkillsComponent>
-    <ProjekteComponent></ProjekteComponent>
-    <ContactComponent></ContactComponent>
+    <AboutMeComponent id="about"></AboutMeComponent>
+    <SkillsComponent id="skill"></SkillsComponent>
+    <ProjekteComponent id="projekt"></ProjekteComponent>
+    <ContactComponent id="kontakt"></ContactComponent>
 </template>
 
 <script setup>
