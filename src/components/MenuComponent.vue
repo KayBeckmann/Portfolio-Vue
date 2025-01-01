@@ -13,10 +13,15 @@
         <li><a href="kontakt">{{ currentMessages.menu.contact }}</a></li>
         <li>
           <select v-model="selectedLocale" @change="changeLocale">
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+            <option value="sv">Svenska</option>
+          </select>
+          <!-- <select v-model="selectedLocale" @change="changeLocale">
             <option value="de"><span class="fi fi-de" aria-hidden="true"></span></option>
             <option value="en"><span class="fi fi-gb" aria-hidden="true"></span></option>
             <option value="sv"><span class="fi fi-se" aria-hidden="true"></span></option>
-          </select>
+          </select> -->
         </li>
       </ul>
     </div>
@@ -26,7 +31,7 @@
 <script setup lang="js">
 import { computed } from 'vue';
 import { useLanguageStore } from '@/stores/language';
-import 'flag-icons/css/flag-icons.min.css'; // Importiere den CSS-Stil für die Flaggen
+// import 'flag-icons/css/flag-icons.css'; // Importiere den CSS-Stil für die Flaggen
 
 const languageStore = useLanguageStore();
 const selectedLocale = computed({
@@ -69,6 +74,12 @@ li {
 
 .right {
   margin-right: var(--margin);
+}
+
+.fi{
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 450px) {
