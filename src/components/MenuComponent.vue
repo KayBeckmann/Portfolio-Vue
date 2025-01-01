@@ -5,17 +5,17 @@
         <h1>Ka<span class="coloriezed">y</span></h1>
       </a>
     </div>
-    <div>
+    <div class="right">
       <ul>
-        <li>About Me</li>
-        <li>Skills</li>
-        <li>Projekte</li>
-        <li>Kontakt</li>
+        <li><a href="about">{{ currentMessages.menu.about }}</a></li>
+        <li><a href="skill">{{ currentMessages.menu.skills }}</a></li>
+        <li><a href="projekt">{{ currentMessages.menu.projects }}</a></li>
+        <li><a href="kontakt">{{ currentMessages.menu.contact }}</a></li>
         <li>
           <select v-model="selectedLocale" @change="changeLocale">
-            <option value="de">Deutsch</option>
-            <option value="en">English</option>
-            <option value="sv">Svenska</option>
+            <option value="de"><span class="fi fi-de" aria-hidden="true"></span></option>
+            <option value="en"><span class="fi fi-gb" aria-hidden="true"></span></option>
+            <option value="sv"><span class="fi fi-se" aria-hidden="true"></span></option>
           </select>
         </li>
       </ul>
@@ -26,6 +26,7 @@
 <script setup lang="js">
 import { computed } from 'vue';
 import { useLanguageStore } from '@/stores/language';
+import 'flag-icons/css/flag-icons.min.css'; // Importiere den CSS-Stil für die Flaggen
 
 const languageStore = useLanguageStore();
 const selectedLocale = computed({
@@ -36,6 +37,8 @@ const selectedLocale = computed({
 function changeLocale() {
   window.location.reload();
 }
+
+const { currentMessages } = useLanguageStore();
 </script>
 
 <style lang="css" scoped>
@@ -66,5 +69,11 @@ li {
 
 .right {
   margin-right: var(--margin);
+}
+
+@media screen and (max-width: 450px) {
+  .right{
+    display: none;
+  }
 }
 </style>
