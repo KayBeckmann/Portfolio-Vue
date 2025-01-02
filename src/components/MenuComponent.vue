@@ -12,16 +12,16 @@
         <li><a href="projekt">{{ currentMessages.menu.projects }}</a></li>
         <li><a href="kontakt">{{ currentMessages.menu.contact }}</a></li>
         <li>
-          <select v-model="selectedLocale" @change="changeLocale">
+          <!-- <select v-model="selectedLocale" @change="changeLocale">
             <option value="de">Deutsch</option>
             <option value="en">English</option>
             <option value="sv">Svenska</option>
-          </select>
-          <!-- <select v-model="selectedLocale" @change="changeLocale">
-            <option value="de"><span class="fi fi-de" aria-hidden="true"></span></option>
-            <option value="en"><span class="fi fi-gb" aria-hidden="true"></span></option>
-            <option value="sv"><span class="fi fi-se" aria-hidden="true"></span></option>
           </select> -->
+          <div class="custom-select">
+            <div v-for="locale in locales" :key="locale.value" @click="setLocale(locale.value)" class="option">
+              <span :class="'fi fi-' + locale.flag"></span>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -31,7 +31,7 @@
 <script setup lang="js">
 import { computed } from 'vue';
 import { useLanguageStore } from '@/stores/language';
-// import 'flag-icons/css/flag-icons.css'; // Importiere den CSS-Stil für die Flaggen
+import 'flag-icons/css/flag-icons.min.css'; // Importiere den CSS-Stil für die Flaggen
 
 const languageStore = useLanguageStore();
 const selectedLocale = computed({
@@ -44,6 +44,17 @@ function changeLocale() {
 }
 
 const { currentMessages } = useLanguageStore();
+
+const locales = [
+  { value: 'de', flag: 'de', name: 'Deutsch' },
+  { value: 'en', flag: 'gb', name: 'English' },
+  { value: 'sv', flag: 'se', name: 'Svenska' }
+];
+
+function setLocale(locale) {
+  selectedLocale.value = locale;
+  changeLocale();
+}
 </script>
 
 <style lang="css" scoped>
@@ -76,10 +87,20 @@ li {
   margin-right: var(--margin);
 }
 
-.fi{
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
+.custom-select {
+  position: relative;
+  display: flex;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.option .fi {
+  margin-right: 8px;
 }
 
 @media screen and (max-width: 450px) {
