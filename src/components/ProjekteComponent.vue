@@ -1,7 +1,7 @@
 <template>
     <h1>Projekte</h1>
 
-    <ProjectCardComponent v-for="project in projects" :key="project.title" :project="project"></ProjectCardComponent>
+    <ProjectCardComponent v-for="project in currentMessages.projects" :key="project.title" :project="project"></ProjectCardComponent>
 </template>
 
 <script setup lang="js">
@@ -10,7 +10,7 @@ import ProjectCardComponent from './ProjectCardComponent.vue';
 
 let projects = [
     {
-        "title":"Join",
+        "title":"{{ currentMessages.projects.title }}",
         "description":"Taskmanagement",
         "url":"https://link-zu.projct"
     },

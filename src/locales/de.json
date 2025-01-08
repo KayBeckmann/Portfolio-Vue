@@ -18,5 +18,22 @@
   "contact": {
     "title": "Kontakt",
     "mail": "Schreib mir eine E-Mail."
-  }
+  },
+  "projects":[
+    {
+      "title":"Join",
+      "description":"Aufgabenverwaltung",
+      "url":"https://projekt.beckmann-md.de"
+    },
+    {
+      "title":"KiTa",
+      "description":"Webseite für den Kindergarten.",
+      "url":"https://projekt.beckmann-md.de"
+    },
+    {
+      "title":"Jennys Farm",
+      "description":"Internetpräsens meiner Frau.",
+      "url":"https://jennys-farm.com"
+    }
+  ]
 }

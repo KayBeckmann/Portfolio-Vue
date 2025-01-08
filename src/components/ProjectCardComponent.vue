@@ -1,23 +1,24 @@
 <template>
-    <h2>{{ props.project.title }}</h2>
-    <p>{{ props.project.description }}</p>
-    <a :href="props.project.url">{{ props.project.url }}</a>
+  <div class="project-card">
+    <h2>{{ project.title }}</h2>
+    <p>{{ project.description }}</p>
+    <a :href="project.url" target="_blank" rel="noopener noreferrer">Mehr erfahren</a>
+  </div>
 </template>
 
-<script setup lang="js">
-import { useLanguageStore } from '../stores/language';
-import { defineProps } from 'vue';
-
-const { currentMessages } = useLanguageStore(); 
-
-const props = defineProps({
-       project: {
-           type: Object,
-           required: true
-       }
-   });
+<script setup>
+defineProps({
+  project: {
+    type: Object,
+    required: true
+  }
+});
 </script>
 
-<style lang="css" scoped>
-
+<style scoped>
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+}
 </style>

@@ -18,5 +18,22 @@
   "contact": {
     "title": "Kontakt",
     "mail": "Skriv ett mejl till mig."
-  }
+  },
+  "projects":[
+    {
+      "title":"Join",
+      "description":"Uppgiftshantering",
+      "url":"https://projekt.beckmann-md.de"
+    },
+    {
+      "title":"KiTa",
+      "description":"Webbplats för förskolan.",
+      "url":"https://projekt.beckmann-md.de"
+    },
+    {
+      "title":"Jennys Farm",
+      "description":"Min frus hemsida.",
+      "url":"https://jennys-farm.com"
+    }
+  ]
 }
