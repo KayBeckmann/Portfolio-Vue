@@ -25,9 +25,15 @@ const getImageUrl = (img) => {
   padding: 20px;
   margin: 10px 0;
   border-radius: 15px;
+  max-width: 120px;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.project-card:hover {
+.skill-card:hover {
   border: 5px solid #00f7f7;
   margin: 6px 0;
 }

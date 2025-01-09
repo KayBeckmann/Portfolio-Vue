@@ -44,4 +44,12 @@ const skills = [
 .wrapper{
   padding: var(--margin);
 }
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:left;
+    gap: 20px;
+}
 </style>
