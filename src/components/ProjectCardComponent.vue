@@ -20,11 +20,11 @@ defineProps({
   border: 1px solid #ddd;
   padding: 20px;
   margin: 10px 0;
+  border-radius: 15px;
 }
 
 .project-card:hover {
   border: 5px solid #00f7f7;
-  padding: 20px;
   margin: 6px 0;
 }
 </style>
