@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <h1>Projekte</h1>
+    <h1>{{ currentMessages.menu.projects }}</h1>
   </div>
 
   <div class="content">

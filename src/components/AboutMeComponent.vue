@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="left">
-      <h2>{{ currentMessages.aboutMe.title }}</h2>
+      <h2>{{ currentMessages.menu.about }}</h2>
       <div>
         {{ currentMessages.aboutMe.description }}
       </div>
