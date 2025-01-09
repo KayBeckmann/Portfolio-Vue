@@ -7,16 +7,11 @@
     </div>
     <div class="right">
       <ul>
-        <li><a href="about">{{ currentMessages.menu.about }}</a></li>
-        <li><a href="skill">{{ currentMessages.menu.skills }}</a></li>
-        <li><a href="projekt">{{ currentMessages.menu.projects }}</a></li>
-        <li><a href="kontakt">{{ currentMessages.menu.contact }}</a></li>
+        <li><a href="#about">{{ currentMessages.menu.about }}</a></li>
+        <li><a href="#skill">{{ currentMessages.menu.skills }}</a></li>
+        <li><a href="#projekt">{{ currentMessages.menu.projects }}</a></li>
+        <li><a href="#kontakt">{{ currentMessages.menu.contact }}</a></li>
         <li>
-          <!-- <select v-model="selectedLocale" @change="changeLocale">
-            <option value="de">Deutsch</option>
-            <option value="en">English</option>
-            <option value="sv">Svenska</option>
-          </select> -->
           <div class="custom-select">
             <div v-for="locale in locales" :key="locale.value" @click="setLocale(locale.value)" class="option">
               <span :class="'fi fi-' + locale.flag"></span>
