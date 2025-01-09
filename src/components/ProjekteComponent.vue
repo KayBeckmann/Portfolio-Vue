@@ -1,9 +1,11 @@
 <template>
+  <div class="wrapper">
     <h1>Projekte</h1>
+  </div>
 
-    <div class="content">
-        <ProjectCardComponent v-for="project in currentMessages.projects" :key="project.title" :project="project"></ProjectCardComponent>
-    </div>
+  <div class="content">
+      <ProjectCardComponent v-for="project in currentMessages.projects" :key="project.title" :project="project"></ProjectCardComponent>
+  </div>
 </template>
 
 <script setup lang="js">
@@ -21,6 +23,9 @@ const { currentMessages } = useLanguageStore();
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+}
+.wrapper{
+  padding: var(--margin);
 }
 
 @media (max-width: 768px) {
