@@ -1,29 +1,31 @@
 <template>
     <h1>Projekte</h1>
 
-    <ProjectCardComponent v-for="project in currentMessages.projects" :key="project.title" :project="project"></ProjectCardComponent>
+    <div class="content">
+        <ProjectCardComponent v-for="project in currentMessages.projects" :key="project.title" :project="project"></ProjectCardComponent>
+    </div>
 </template>
 
 <script setup lang="js">
 import { useLanguageStore } from '../stores/language';
 import ProjectCardComponent from './ProjectCardComponent.vue';
 
-let projects = [
-    {
-        "title":"{{ currentMessages.projects.title }}",
-        "description":"Taskmanagement",
-        "url":"https://link-zu.projct"
-    },
-    {
-        "title":"KiTa",
-        "description":"Homepage Kindergarten",
-        "url":"https://link-zu.projct"
-    },
-]
-
 const { currentMessages } = useLanguageStore(); 
 </script>
 
 <style lang="css" scoped>
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Erzeugt zwei gleichbreite Spalten */
+    gap: 20px; /* Fügt einen Abstand von 20px zwischen den Spalten hinzu */
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
 
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr; /* Zeigt nur eine Spalte auf kleineren Bildschirmen an */
+  }
+}
 </style>
