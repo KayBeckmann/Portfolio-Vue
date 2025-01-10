@@ -12,6 +12,10 @@ import { useLanguageStore } from '../stores/language';
 import SkillCardComponent from './SkillCardComponent.vue'
 
 const { currentMessages } = useLanguageStore(); 
+//HTML, CSS, JavaScript, TipeScript
+//Angular, Firebase, API
+//git, Materialdesign
+//Srum,
 const skills = [
     {
         "title": "HTML",
@@ -30,12 +34,28 @@ const skills = [
         "img":"typescript.png"
     },
     {
+        "title": "Angular",
+        "img":"angular.png"
+    },
+    {
+        "title": "Firebase",
+        "img":"firebase.png"
+    },
+    {
+        "title": "API",
+        "img":"api.png"
+    },
+    {
         "title": "git",
         "img":"git.png"
     },
     {
         "title": "Materialdesign",
         "img":"materialdesign.png"
+    },
+    {
+        "title": "Scrum",
+        "img":"scrum.png"
     },
 ]
 </script>
