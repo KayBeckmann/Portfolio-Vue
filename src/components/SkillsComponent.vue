@@ -1,6 +1,7 @@
 <template>
     <div class="wrapper">
         <h1>{{ currentMessages.menu.skills }}</h1>
+        <p>{{ currentMessages.skill.text }}</p>
     </div>
     <div class="content">
         <SkillCardComponent v-for="skill in skills" :key="skill.title" :skill="skill"></SkillCardComponent>

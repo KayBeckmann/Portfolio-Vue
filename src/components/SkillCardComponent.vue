@@ -1,6 +1,6 @@
 <template>
   <div class="skill-card">
-    <img :src="getImageUrl(skill.img)" :alt="skill.title">
+    <img :src="getImageUrl(skill.img)" :alt="skill.title" class="icon">
     <p>{{ skill.title }}</p>
   </div>
 </template>
@@ -31,10 +31,37 @@ const getImageUrl = (img) => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 .skill-card:hover {
   border: 5px solid #00f7f7;
   margin: 6px 0;
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover .icon {
+  animation: jump 0.5s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 </style>
