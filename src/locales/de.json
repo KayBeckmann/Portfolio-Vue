@@ -35,5 +35,8 @@
       "description":"Internetpräsens meiner Frau.",
       "url":"https://jennys-farm.com"
     }
-  ]
+  ],
+  "skill":{
+    "text":"Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt."
+  }
 }

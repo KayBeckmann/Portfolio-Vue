@@ -35,5 +35,8 @@
       "description":"Homepage of my wife.",
       "url":"https://jennys-farm.com"
     }
-  ]
+  ],
+  "skill":{
+    "text":"I have gained experience in building projects with various front end technologies and concepts."
+  }
 }

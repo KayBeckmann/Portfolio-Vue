@@ -35,5 +35,8 @@
       "description":"Min frus hemsida.",
       "url":"https://jennys-farm.com"
     }
-  ]
+  ],
+  "skill":{
+    "text":"Jag har skaffat mig erfarenhet av att bygga projekt med olika frontend-teknologier och koncept."
+  }
 }
