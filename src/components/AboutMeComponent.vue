@@ -77,6 +77,7 @@ const { currentMessages } = useLanguageStore();
   .wrapper{
     display: flex;
     flex-direction: column-reverse;
+    width: 92dvw;
   }
 }
 </style>
