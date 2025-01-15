@@ -17,7 +17,7 @@
 
 <style lang="css" scoped>
 .wrapper {
-  border-top: 4px solid var(--highlightg-color);
+  border-top: 2px solid var(--highlightg-color);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 280px;
@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: var(--margin);
 }
 h1 {
   font-size: clamp(2.4rem, 1.7rem + 3.73vw, 4.5rem);
@@ -43,6 +44,7 @@ h1 {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin:var(--margin)
 }
 
 @media (max-width: 700px) {
