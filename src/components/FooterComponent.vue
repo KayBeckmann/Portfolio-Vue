@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 280px;
+  width: 100dvw;
 }
 
 .left {
