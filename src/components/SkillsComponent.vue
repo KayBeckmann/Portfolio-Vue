@@ -1,10 +1,12 @@
 <template>
     <div class="wrapper">
-        <h1>{{ currentMessages.menu.skills }}</h1>
-        <p>{{ currentMessages.skill.text }}</p>
-    </div>
-    <div class="content">
-        <SkillCardComponent v-for="skill in skills" :key="skill.title" :skill="skill"></SkillCardComponent>
+        <div class="content">
+            <SkillCardComponent v-for="skill in skills" :key="skill.title" :skill="skill"></SkillCardComponent>
+        </div>
+        <div class="text">
+            <h1>{{ currentMessages.menu.skills }}</h1>
+            <p>{{ currentMessages.skill.text }}</p>
+        </div>
     </div>
 </template>
 
@@ -13,10 +15,6 @@ import { useLanguageStore } from '../stores/language';
 import SkillCardComponent from './SkillCardComponent.vue'
 
 const { currentMessages } = useLanguageStore(); 
-//HTML, CSS, JavaScript, TipeScript
-//Angular, Firebase, API
-//git, Materialdesign
-//Srum,
 const skills = [
     {
         "title": "HTML",
@@ -63,14 +61,28 @@ const skills = [
 
 <style lang="css" scoped>
 .wrapper{
-  padding: var(--margin);
+  margin-top: var(--space);
+  padding: var(--space);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space)
 }
 
 .content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:left;
-    gap: 20px;
+    justify-content: space-around;
+    /* gap: var(--space); */
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
 }
 </style>
