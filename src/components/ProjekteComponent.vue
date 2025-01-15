@@ -19,10 +19,10 @@ const { currentMessages } = useLanguageStore();
 .content{
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Erzeugt zwei gleichbreite Spalten */
-    gap: 20px; /* Fügt einen Abstand von 20px zwischen den Spalten hinzu */
+    gap: var(--space); /* Fügt einen Abstand von 20px zwischen den Spalten hinzu */
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
+    margin-left: var(--margin);
 }
 .wrapper{
   padding: var(--margin);
