@@ -66,7 +66,7 @@ li {
   position: sticky;
   top: 0;
   height: var(--menu-height);
-  max-width: 100dvw;
+  width: 100dvw;
   background-color: rgba(20, 29, 47, 0.5);
   backdrop-filter: blur(6px);
   display: flex;
