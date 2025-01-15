@@ -7,10 +7,10 @@
     </div>
     <div class="right">
       <ul>
-        <li><a href="#about">{{ currentMessages.menu.about }}</a></li>
-        <li><a href="#skill">{{ currentMessages.menu.skills }}</a></li>
-        <li><a href="#projekt">{{ currentMessages.menu.projects }}</a></li>
-        <li><a href="#kontakt">{{ currentMessages.menu.contact }}</a></li>
+        <li class="desktop"><a href="#about">{{ currentMessages.menu.about }}</a></li>
+        <li class="desktop"><a href="#skill">{{ currentMessages.menu.skills }}</a></li>
+        <li class="desktop"><a href="#projekt">{{ currentMessages.menu.projects }}</a></li>
+        <li class="desktop"><a href="#kontakt">{{ currentMessages.menu.contact }}</a></li>
         <li>
           <div class="custom-select">
             <div v-for="locale in locales" :key="locale.value" @click="setLocale(locale.value)" class="option">
@@ -98,8 +98,8 @@ li {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 450px) {
-  .right{
+@media screen and (max-width: 750px) {
+  .desktop{
     display: none;
   }
 }
