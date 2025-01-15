@@ -21,10 +21,8 @@ const getImageUrl = (img) => {
 
 <style scoped>
 .skill-card {
-  border: 1px solid #ddd;
   padding: 20px;
   margin: 10px 0;
-  border-radius: 15px;
   max-width: 120px;
   min-width: 120px;
   display: flex;
@@ -35,8 +33,9 @@ const getImageUrl = (img) => {
 }
 
 .skill-card:hover {
-  border: 5px solid #00f7f7;
-  margin: 6px 0;
+  border: 1px solid var(--highlightg-color);
+  border-radius: var(--radius);
+  margin: 6px 0px;
 }
 
 .icon {
@@ -44,7 +43,7 @@ const getImageUrl = (img) => {
 }
 
 .skill-card:hover .icon {
-  animation: jump 0.5s ease-in-out infinite;
+  animation: jump 0.5s ease-in-out;
 }
 
 @keyframes jump {
@@ -55,7 +54,7 @@ const getImageUrl = (img) => {
     transform: translateY(-10px);
   }
   50% {
-    transform: translateY(0);
+    transform: translateY(5px);
   }
   70% {
     transform: translateY(-5px);
