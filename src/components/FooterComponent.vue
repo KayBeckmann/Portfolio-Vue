@@ -1,9 +1,11 @@
 <template>
   <div class="wrapper">
     <div class="left content">
-      <h1>Ka<span class="coloriezed">y</span></h1>
-      <div class="pointer">Impressum</div>
-      <div class="pointer">DSGVO</div>
+      <router-link to="/">
+        <h1>Ka<span class="coloriezed">y</span></h1>
+      </router-link>
+      <router-link to="/impressum">Impressum</router-link>
+      <router-link to="/dsgvo">DSGVO</router-link>
     </div>
     <div class="middle content text">&copy; Kay Beckmann 2025</div>
     <div class="right">

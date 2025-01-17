@@ -1,9 +1,9 @@
 <template>
   <div class="menu">
     <div class="left">
-      <a href="#">
+      <router-link to="/">
         <h1>Ka<span class="coloriezed">y</span></h1>
-      </a>
+      </router-link>
     </div>
     <div class="right">
       <ul>
