@@ -14,10 +14,11 @@
     </div>
   </div>
 
-  <button
-    class="primary">
-    Let's talk!
-  </button>
+<button class="primary">
+  <a href="mailto:contact@kay-beckmann.com" target="_blank">
+    {{ currentMessages.landingPage.talk }}
+  </a>
+</button>
 </div>
 <div class="footer">
   <div class="footer-left">
@@ -25,8 +26,10 @@
     <SocialmediaComponent></SocialmediaComponent>
   </div>
   <div class="footer-right pointer">
-    Scroll down
-    <img class="arrow" src="../assets/icons/arrow.png" alt="->" />
+    <a href="#about">
+      Scroll down
+      <img class="arrow" src="../assets/icons/arrow.png" alt="->" />
+    </a>
   </div>
 </div>
 
