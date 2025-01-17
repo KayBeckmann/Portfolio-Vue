@@ -10,7 +10,7 @@
         <li class="desktop"><a href="#about">{{ currentMessages.menu.about }}</a></li>
         <li class="desktop"><a href="#skill">{{ currentMessages.menu.skills }}</a></li>
         <li class="desktop"><a href="#projekt">{{ currentMessages.menu.projects }}</a></li>
-        <li class="desktop"><a href="#kontakt">{{ currentMessages.menu.contact }}</a></li>
+        <!-- <li class="desktop"><a href="#kontakt">{{ currentMessages.menu.contact }}</a></li> -->
         <li>
           <div class="custom-select">
             <div v-for="locale in locales" :key="locale.value" @click="setLocale(locale.value)" class="option">
