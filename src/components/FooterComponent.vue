@@ -7,13 +7,14 @@
     </div>
     <div class="middle content text">&copy; Kay Beckmann 2025</div>
     <div class="right">
-      <p>Links zu Sozialmedia</p>
-      <!-- <app-sozialmedialinks></app-sozialmedialinks> -->
+      <SocialmediaComponent></SocialmediaComponent>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import SocialmediaComponent from './SocialmediaComponent.vue';
+</script>
 
 <style lang="css" scoped>
 .wrapper {
