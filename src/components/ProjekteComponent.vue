@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="projekt">
     <h1>{{ currentMessages.menu.projects }}</h1>
   </div>
 
